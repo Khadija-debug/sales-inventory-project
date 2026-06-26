@@ -1,0 +1,18 @@
+📊 Project: Sales & Inventory Analytics System
+
+Built an end-to-end data analytics project using SQL Server and Power BI.
+
+The project involved:
+- Loading raw e-commerce data into SQL Server
+- Designing fact and dimension tables (Star Schema)
+- Performing SQL-based data transformation and analysis
+- Building an interactive Power BI dashboard
+
+Key insights:
+- Revenue trends over time
+- Top-performing product categories
+- High-value customers
+- Business KPI tracking
+
+Skills used:
+SQL, Data Modeling, Power BI, Data Cleaning, Business Intelligence

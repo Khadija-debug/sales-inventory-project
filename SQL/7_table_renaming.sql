@@ -1,0 +1,1 @@
+EXEC sp_rename 'olist_sellers_dataset' ,'sellers' ;

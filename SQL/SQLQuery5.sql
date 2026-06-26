@@ -1,0 +1,1 @@
+SELECT TOP 20 * FROM products WHERE product_category_name IS NULL;

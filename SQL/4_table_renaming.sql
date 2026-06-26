@@ -1,0 +1,1 @@
+EXEC sp_rename 'olist_order_payments_dataset' , 'payments';

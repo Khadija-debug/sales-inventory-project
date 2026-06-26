@@ -1,0 +1,1 @@
+EXEC sp_rename 'olist_order_items_dataset' , 'order_items';

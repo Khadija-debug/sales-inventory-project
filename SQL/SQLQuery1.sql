@@ -1,0 +1,1 @@
+SELECT TOP 20 * FROM vw_product_sales;
