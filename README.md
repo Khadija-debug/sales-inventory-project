@@ -1,34 +1,51 @@
-# Sales Inventory Project
-Sales & Inventory Analytics System (Olist Dataset)
+🚀 Sales & Inventory Analytics System (End-to-End Data Engineering Project)
+
+📌 Project Overview
+
+This project is a complete end-to-end Data Engineering pipeline built using real-world tools and workflows.
+
+It transforms raw e-commerce data into a structured SQL Server data warehouse and an interactive Power BI dashboard using a fully automated Python ETL pipeline.
+
+The project demonstrates how raw data is converted into business-ready insights using an industry-style architecture.
 
 
- Project Overview
+---
 
-This project transforms raw e-commerce data into a fully interactive analytics dashboard using SQL Server and Power BI.
+🧠 Key Capabilities
 
-It demonstrates:
+End-to-end ETL Pipeline (Python)
 
-Data Engineering
+Data Warehousing (SQL Server)
 
-SQL Analytics
+Star Schema Data Modeling
 
-Data Modeling (Star Schema)
+Data Cleaning & Validation Layer
 
-Business Intelligence Dashboarding
+Automated Bulk Data Loading
+
+Logging & Error Handling
+
+Execution Time Monitoring
+
+Business Intelligence Dashboard (Power BI)
 
 
+
+---
 
 📦 Dataset
 
 Brazilian E-Commerce Public Dataset (Olist - Kaggle)
 
-Contains:
+Includes:
 
 Orders
 
 Customers
 
 Products
+
+Order Items
 
 Payments
 
@@ -37,35 +54,114 @@ Reviews
 Sellers
 
 
-🧱 Architecture
 
-Raw CSV Data
-   ↓
-SQL Server Database
-   ↓
+---
+
+🏗️ Architecture
+
+Raw CSV Files
+↓
+Python ETL Pipeline
+↓
+Data Validation Layer
+↓
+SQL Server Data Warehouse
+↓
 Fact & Dimension Tables
-   ↓
-Views (Reporting Layer)
-   ↓
-Power BI Dashboard
+↓
+Power BI Reporting Layer
+↓
+Interactive Dashboard
 
 
 ---
 
-🛠️ Tools Used
+⚙️ Tech Stack
 
-SQL Server Management Studio (SSMS)
+Python (Pandas, PyODBC)
+
+SQL Server (SSMS)
 
 Power BI Desktop
-
-Excel / CSV
 
 Git & GitHub
 
 VS Code
 
 
-📊 Dashboard Features
+
+---
+
+🔄 ETL Pipeline Workflow
+
+Extract
+
+Multi-table extraction (7 datasets from CSV)
+
+
+Transform
+
+Data cleaning and formatting
+
+Date conversion
+
+Null handling
+
+
+Validate
+
+Dataset integrity checks
+
+Row count validation
+
+Pipeline safety checks
+
+
+Load
+
+Bulk insert into SQL Server
+
+Multi-table support
+
+Performance optimized loading
+
+
+Monitoring
+
+Logging system (etl.log)
+
+Error handling (try/except)
+
+Execution time tracking
+
+
+
+---
+
+📊 Data Model (Star Schema)
+
+Fact Table
+
+fact_sales
+
+
+Dimension Tables
+
+dim_customer
+
+dim_product
+
+dim_seller
+
+dim_date
+
+dim_region
+
+
+
+---
+
+📈 Power BI Dashboard Features
 
 Total Revenue KPI
 
@@ -75,44 +171,78 @@ Monthly Revenue Trend
 
 Top Product Categories
 
-Top Customers
+Top Customers Analysis
 
-Category & Year Filters
+Region,Year & Category Filters
 
+Interactive Drill-through Pages
+
+
+
+---
 
 🧠 Key Learnings
 
-Star Schema design
+End-to-end ETL pipeline development
 
-Fact vs Dimension tables
+Data warehouse design (Star Schema)
 
-SQL JOINs & Aggregations
+SQL Server data modeling
 
-Data cleaning using views
+Python automation for data engineering
 
-Power BI dashboard design
+Data validation and error handling
+
+BI dashboard design in Power BI
 
 📸 Dashboard Preview
 
-! [Dashboard Preview](Docs/Images/dashboard.png)
+![Dashboard Preview](Docs/Images/dashboard.png)
 Docs/dashboard_final.png
+
+
+🚀 How to Run This Project
+
+1. Clone Repository
+
+git clone <your-repo-link>
+
+2. Install Dependencies
+
+pip install pandas pyodbc
+
+3. Run ETL Pipeline
+
+python main.py
+
+4. Open Dashboard
+
+Open Power BI .pbix file from the PowerBI/ folder
 
 📌 Project Status
 
 ✔ Data ingestion completed
-✔ SQL modeling completed
-✔ Power BI dashboard built
-✔ Project ready for portfolio
+✔ SQL data warehouse built
+✔ Python ETL pipeline automated
+✔ Data validation & logging added
+✔ Power BI dashboard completed
+✔ Portfolio-ready project
 
 
 👤 Author
+
 Khadija Ashraf
-Aspiring AI Data Engineer
+Aspiring AI / Data Engineer
+
 
 💡 Future Improvements
 
-Add Python ETL pipeline
+Cloud deployment (Azure / AWS)
 
-Add cloud database (Azure/AWS)
+Orchestrate pipeline using Airflow
 
-Add AI-generated insights layer
+Real-time data ingestion
+
+AI-generated business insights
+
+API layer for analytics access
